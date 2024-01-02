@@ -34,4 +34,26 @@ print('health' not in lux)
 # 12.2.3 딕셔너리의 키 개수 구하기
 len(lux) #lux 딕셔너리에는 health,mana,melee,armor의 네개의 키가 포함 되어 있으므로....
 
-# 12.4
+# 12.4 다음 소스 코드를 완성하여 게임 캐릭터의 체력과 이동속도가 출력되게 만드세요.
+camille={
+    'health':575.6,
+    'health_regen':1.7,
+    'mana':338.8,
+    'mana_regen':1.63,
+    'melee':125,
+    'attack_damage':60,
+    'attack_speed':0.625,
+    'armor':26,
+    'magic_resistance':32.1,
+    'movement_speed':340
+
+}
+print(camille['health'])
+print(camille['movement_speed'])
+# 하다가 버벅인거 말고는 쉽게 풀었습니다.
+# 12.5 심사문제:딕셔너리에 게임 캐릭터 능력치 저장하기
+
+mordekaiser=dict(health=575.6,health_regen=1.7,mana=338.8,mana_regen=1.63)
+print(mordekaiser.keys())
+print(mordekaiser.values())
+# 문제가 말하고자 하는바가 뭔지 잘 모르겠어서 제 나름대로 만들어 보았습니다. 죄송합니다..
