@@ -55,3 +55,4 @@ elif Cash==msg2:
 else:
     print('해당 사항이 없습니다.')
 
+print('test')
