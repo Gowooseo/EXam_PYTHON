@@ -24,6 +24,14 @@ print(lux['health']) # 바뀐것을 확인 가능(딕셔너리[키]=값)
 lux['mana regen']=3.28
 print(lux)
 
-12.2.2 딕셔너리에 키가 있는지 확인하기
+# 12.2.2 딕셔너리에 키가 있는지 확인하기
+#멤버 연산자를 사용한다.
+'health' in lux
+print('health' in lux)
 
+'health' not in lux
+print('health' not in lux)
+# 12.2.3 딕셔너리의 키 개수 구하기
+len(lux) #lux 딕셔너리에는 health,mana,melee,armor의 네개의 키가 포함 되어 있으므로....
 
+# 12.4
