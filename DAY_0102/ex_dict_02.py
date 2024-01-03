@@ -18,7 +18,7 @@ print(f"jumsuDict[('Hong',2)] => {jumsuDict[('Hong',2)]}")
 
 # 키의 데이터 타입 동일해야 하나요?? 아닙니다.
 testDict={1:'Hong',2.0:'Kim',False:100,"name":'HongGilDong',False:2024}
-print(f'testDict=> len{testDict}개, {testDict}')
+print(f'testDict=> {len(testDict)}개, {testDict}')
 
 # 빈 딕셔너리 생성
 emDict={}

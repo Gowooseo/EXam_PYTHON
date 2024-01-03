@@ -8,7 +8,7 @@ myDict={}
 myDict['one']=100
 
 # 데이터 추가 => update(키=데이터) 메서드
-# 주의!!! zlsms str 타입만 가능, str 타입이지만 '',"" 사용 안됨
+# 주의!!! 키는 str 타입만 가능, str 타입이지만 '',"" 사용 안됨
 #myDict.update('two'=200)<=== ERROR
 myDict.update(two=200)
 myDict.update(two=200,_1=1000)
@@ -48,7 +48,7 @@ print(f'myDict.get("three","존재 하지 않음") :{myDict.get("three","존재 
 # 멤버 연산자 => 원소 in 여러개 저장 타입
 #           => 원소 not in 여러개 저장 타입
 # - 여러개 저장 타입:str,list,tuple,dict,set
-#- dustks rufrhk => True/False
+#- 연산 결과 => True/False
 #-----------------------------------------------------------
 aList=[1,2,3]
 aTuple=11,22

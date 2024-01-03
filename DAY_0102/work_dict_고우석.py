@@ -57,3 +57,37 @@ mordekaiser=dict(health=575.6,health_regen=1.7,mana=338.8,mana_regen=1.63)
 print(mordekaiser.keys())
 print(mordekaiser.values())
 # 문제가 말하고자 하는바가 뭔지 잘 모르겠어서 제 나름대로 만들어 보았습니다. 죄송합니다..
+
+
+# 실제 답안
+# [문제]----------------------------------------
+# 문자열 여러개와 실수 숫자 여러개를 두 줄로 입력 받기
+# - 첫번쨰 입력 받은 값을 Key로
+# - 두번재 입력 받은 값을 Value로
+# - 최종적으로 딕셔너리로 저장해주세요
+
+#-----------------------------------------------
+twoData=input("문자열 4~5개, 실수 숫자 4~5개를 두 줄로 입력\n 단, 문자열과 실수 숫자 갯수는 동일\n(예:ab bb cc dd, 3.1 5.2 6.5 8.1) :")
+
+
+# key와 value로 데이터 분리
+keys,values=twoData.split(',') # 'aa bb cc dd,1.12.23.3.4.4
+keys=keys.split # 'aa bb cc dd
+values=values.split() # 1.1,2.2,3.3.,4.4
+# 입력 데이터 존재 여부 체크(len()이 8또는 10, 또한 값이 실수)
+if (len(keys)==4 and len(values)==4) or (len(keys)==5 and len(values)==5) :
+    dataDict={}
+    if len(keys)==4:
+        dataDict[keys[0]]=values[0]
+        dataDict[keys[1]]=values[1]
+        dataDict[keys[2]]=values[2]
+        dataDict[keys[3]]=values[3]
+
+    else:
+        dataDict[keys[0]] = values[0]
+        dataDict[keys[1]] = values[1]
+        dataDict[keys[2]] = values[2]
+        dataDict[keys[3]] = values[3]
+    print(f'dataDict => {dataDict}')
+else:
+    print("입력된 데이터가 정확하지 않습니다.")
