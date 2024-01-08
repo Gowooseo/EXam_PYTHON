@@ -17,7 +17,7 @@ for i in range(100):
     if i%2==1:
         print(i)
         
-# 18.2.2 while 에서 코드 실행 건너뛰기
+# 18.2.2 while 에서 코드 실행 건너뛰기(홀수만 출력)
 i=0
 while i<100:
     i+=1
