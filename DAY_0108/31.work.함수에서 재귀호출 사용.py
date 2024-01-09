@@ -17,4 +17,8 @@ def hello(count):
 hello(5)
 
 #31.2 재귀호출로 팩토리얼 구하기
-def factorial
+def factorial(n):
+    if n==1:
+        return 1
+    return n *factorial(n-1)
+print(factorial(5))
