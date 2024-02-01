@@ -70,8 +70,18 @@
 # def printint():
 #     nums=input("정수 리스트를 입력(예:[1,2,3,4,5,6])")
 #
+#18.
 
+# 19.
+num=input('팩토리얼 수 입력:')
+def factorial(x):
+    if x==1:
+        return 1
+    return x*factorial(x-1)
 
+while True:
+
+print(f'{num}!=>{factorial(int(num))}')
 
 
 
